@@ -1,0 +1,69 @@
+#empty list and storing
+mylist=[]
+n=int(input("enter any number:"))
+for x in range(n):
+    num=int(input("enter a number:"))
+    mylist.append(num)
+print("my updated list is:",mylist)
+
+----------------------------
+#accessing of list
+l=[10,20,30,"milky",(10+20j),True,1]
+print(l[3])
+print(l[-2])
+print(l[1:4])
+print(l)
+l.remove(30)
+print(l)
+
+-----------------------
+#min and max of a list
+l=[10,20,30,40,50,60,True,1]
+print(len(l))
+print(l)
+print(max(l))
+print(min(l))
+----------------------
+#sum of elements of a list
+mylist=[8,2,0,3,0,7]
+sum=0
+for i in mylist:
+    sum=sum+i;
+    print("The sum is ",sum)
+-----------------------
+#string seperstion by spaces
+s=input("enter the string:")
+print(s.split())
+------------------------
+#accept n numbers and store them
+n=int(input("enter the value of n:"))
+mylist=[]
+for i in range(n):
+ num=int(input("enter a number:"))
+ mylist.append(num)
+print("even numbers are:")
+print("[",end=" ")
+for num in mylist:
+    if num%2==0:
+        print(num,end=",")
+print("]")
+-------------------------
+#remove specific elements in a list and copy the list
+list=[10,20,30,"milky",True,0,10+20j,False,1,True]
+print(list)
+x=list.copy()
+print(x)
+list.pop(3)
+print(list)
+del list[2]
+print(list)
+list.reverse()
+print(list)
+list.clear()
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+
+
+
